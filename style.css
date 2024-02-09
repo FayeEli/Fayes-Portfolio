@@ -166,14 +166,13 @@ section {
   display: flex;
   justify-content: center;
   gap: 10rem;
-  gap: 5rem;
   height: 80vh;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 1200px;
+  width: 1200px;
   margin: auto 0;
 }
 
@@ -286,7 +285,6 @@ section {
 
 .about-pic {
   border-radius: 4rem;
-  border-radius: 2rem;
 }
 
 .arrow {
@@ -432,4 +430,3 @@ footer {
 footer p {
   text-align: center;
 }
-
