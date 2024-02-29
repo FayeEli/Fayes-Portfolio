@@ -5,10 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faye's Portfolio</title>
+    <style>
+      body {
+          background-color: white;
+          color: black;
+      }
+
+      body.dark-mode {
+          background-color: black;
+          color: white;
+      }
+  </style>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <button class="dark-mode-toggle">Dark Mode</button>
+    <script>
+        function toggleDarkMode() {
+            const body = document.querySelector("body");
+            const toggleButton = document.querySelector(".dark-mode-toggle");
+
+            body.classList.toggle("dark-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                toggleButton.textContent = "Light Mode";
+            } else {
+                toggleButton.textContent = "Dark Mode";
+            }
+        }
+
+        document.querySelector(".dark-mode-toggle").addEventListener("click", toggleDarkMode);
+    </script>
     <nav id="desktop-nav">
       <div class="logo">Faye Elizabeth</div>
       <div>
@@ -301,10 +329,34 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://uxfol.io/p/9b839786/03491ff7'"
+                onclick="location.href='https://github.com/'"
               >
                 Live Demo
               </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Responsive 3D Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
       <img
         src="./assets/assets/arrow.png"
         alt="Arrow icon"
